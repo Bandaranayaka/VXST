@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="Summary"
+        android:textColor="@color/border_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="89dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:text="N890.04"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <TextView
+        android:id="@+id/textViewEnterPIN"
+        android:layout_width="315dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_pin"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMinInterest" />
+
+    <TextView
+        android:id="@+id/textViewChange"
+        android:layout_width="89dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="-0.5[34.8%]"
+        android:textColor="@color/Surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmount" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="174dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:text="Name : Marcy Tracy"
+        android:textColor="@color/Surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChange" />
+
+    <TextView
+        android:id="@+id/textViewAmount2"
+        android:layout_width="191dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Amount : N345,000"
+        android:textColor="@color/Surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewAmount3"
+        android:layout_width="193dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Amount : N345,000"
+        android:textColor="@color/Surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmount2" />
+
+
+    <TextView
+        android:id="@+id/textViewSubscription"
+        android:layout_width="196dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="Subscription : Annual"
+        android:textColor="@color/Surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmount3" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="306dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/summaryBackBtn"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPIN"
+        android:layout_width="317dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/your_background_color"
+        android:ems="10"
+        android:hint="@string/enter_pin"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/Surface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnterPIN" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnInvest"
+        style="@android:style/Widget.Button"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_background"
+        android:text="@string/invest"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPIN"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/textViewMinInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/minimum_interest"
+        android:textColor="@color/Surface"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubscription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

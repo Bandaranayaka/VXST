@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Surface">#381E72</color>
+    <color name="Second">#65558F</color>
+    <color name="ButtonColour">#381E72</color>
+    <color name="border_color">#65558F</color>
+    <color name="your_background_color">#E5E5E5</color>
+    <color name="red">#FF0C0C</color>
+
+</resources>

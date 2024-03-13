@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginStart="150dp"
+            android:padding="16dp"
+            android:text="Invest"
+            android:textColor="@color/border_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/FundButton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button2_background"
+
+                    android:text="Cash"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button6.3.5"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button2_background"
+
+                    android:text="Assets"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/BackDebet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/card" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="275dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+
+            android:text="Top Stocks To Invest In"
+            android:textColor="@color/Surface"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="363dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_border"
+            android:backgroundTint="@color/your_background_color"
+            android:ems="10"
+            android:hint="   Search"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Surface"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/DangtImg"
+                    android:layout_width="91dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/dang"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/BackDebet"
+                    android:layout_width="91dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/dang"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/DangtImg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="32dp"
+                    android:text="N76,000,345"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="76dp"
+                    android:text="-0.5[34.8%]"
+                    android:textColor="@color/Surface" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="48dp"
+                    android:text="N76,000,345"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-0.5[34.8%]"
+                    android:textColor="@color/Surface" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="91dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/dang" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="91dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+
+                    app:srcCompat="@drawable/dang" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="32dp"
+                    android:text="N76,000,345"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="76dp"
+                    android:text="-0.5[34.8%]"
+                    android:textColor="@color/Surface" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="48dp"
+                    android:text="N76,000,345"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="-0.5[34.8%]"
+                    android:textColor="@color/Surface" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/Surface"
+
+
+            android:text="Stock Portfolio"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/BackDebet"
+                android:layout_width="49dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/pay" />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3.1"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Paystack"
+                    android:textColor="@color/Surface"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3.2"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="8dp"
+                    android:text="+345"
+                    android:textColor="@color/Surface" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/BackDebet"
+                android:layout_width="49dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/pay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3.2.1"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Paystack"
+                    android:textColor="@color/Surface"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3.2.2"
+                    android:layout_width="89dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="8dp"
+                    android:text="+345"
+                    android:textColor="@color/Surface" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
+        <ImageView
+            android:id="@+id/investHome"
+            android:layout_width="79dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/hom" />
+
+        <ImageView
+            android:id="@+id/investBank"
+            android:layout_width="79dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/inves" />
+
+        <ImageView
+            android:id="@+id/investTransact"
+            android:layout_width="79dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/save" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
